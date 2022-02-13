@@ -1,0 +1,13 @@
+{
+	"variants":
+	{
+		"": { "model": "hempcraft:plant/plant"}
+	},
+	"credit": "Made with Blockbench",
+	"parent": "hempcraft:block",
+	"textures": {
+		"1": "hempcraft:block/plant",
+		"cross": "hempcraft:block/plant",
+		"particle": "hempcraft:block/plant"
+	}
+}

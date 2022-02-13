@@ -1,0 +1,98 @@
+{
+    "itemGroup.HempCraft": "HempCraft",
+    "item.hempcraft.joint_paper": "Joint Paper",
+    "item.hempcraft.empty_cone": "Empty Cone",
+    "item.hempcraft.empty_blunt": "Empty Blunt",
+    
+
+    "item.hempcraft.buds.og_kush": "OG Kush Bud",
+    "item.hempcraft.plants.og_kush": "OG Kush Plant",
+    "item.hempcraft.seeds.og_kush": "OG Kush Seeds",
+    "item.hempcraft.joints.og_kush": "OG Kush Joint",
+    "item.hempcraft.cones.og_kush": "OG Kush Cone",
+    "item.hempcraft.blunts.og_kush": "OG Kush Blunt",
+
+    "item.hempcraft.buds.chem_fruit": "Chem Fruit Bud",
+    "item.hempcraft.plants.chem_fruit": "Chem Fruit Plant",
+    "item.hempcraft.seeds.chem_fruit": "Chem Fruit Seeds",
+    "item.hempcraft.joints.chem_fruit": "Chem Fruit Joint",
+    "item.hempcraft.cones.chem_fruit": "Chem Fruit Cone",
+    "item.hempcraft.blunts.chem_fruit": "Chem Fruit Blunt",
+
+    "item.hempcraft.buds.trainwreck": "Trainwreck Bud",
+    "item.hempcraft.plants.trainwreck": "Trainwreck Plant",
+    "item.hempcraft.seeds.trainwreck": "Trainwreck Seeds",
+    "item.hempcraft.joints.trainwreck": "Trainwreck Joint",
+    "item.hempcraft.cones.trainwreck": "Trainwreck Cone",
+    "item.hempcraft.blunts.trainwreck": "Trainwreck Blunt",
+    
+    "item.hempcraft.buds.purple_kush": "Purple Kush Bud",
+    "item.hempcraft.plants.purple_kush": "Purple Kush Plants",
+    "item.hempcraft.seeds.purple_kush": "Purple Kush Seed",
+    "item.hempcraft.joints.purple_kush": "Purple Kush Joint",
+    "item.hempcraft.cones.purple_kush": "Purple Kush Cone",
+    "item.hempcraft.blunts.purple_kush": "Purple Kush Blunt",
+
+    "item.hempcraft.buds.skywalker_og": "Skywalker OG Bud",
+    "item.hempcraft.plants.skywalker_og": "Skywalker OG Plants",
+    "item.hempcraft.seeds.skywalker_og": "Skywalker OG Seed",
+    "item.hempcraft.joints.skywalker_og": "Skywalker OG Joint",
+    "item.hempcraft.cones.skywalker_og": "Skywalker OG Cone",
+    "item.hempcraft.blunts.skywalker_og": "Skywalker OG Blunt",
+
+    "item.hempcraft.buds.platinum_cookies": "Platinum Cookies Bud",
+    "item.hempcraft.plants.platinum_cookies": "Platinum Cookies Plant",
+    "item.hempcraft.seeds.platinum_cookies": "Platinum Cookies Seeds",
+    "item.hempcraft.joints.platinum_cookies": "Platinum Cookies Joint",
+    "item.hempcraft.cones.platinum_cookies": "Platinum Cookies Cone",
+    "item.hempcraft.blunts.platinum_cookies": "Platinum Cookies Blunt",
+
+    "item.hempcraft.buds.laughing_buddha": "Laughing Buddha Bud",
+    "item.hempcraft.plants.laughing_buddha": "Laughing Buddha Plant",
+    "item.hempcraft.seeds.laughing_buddha": "Laughing Buddha Seeds",
+    "item.hempcraft.joints.laughing_buddha": "Laughing Buddha Joint",
+    "item.hempcraft.cones.laughing_buddha": "Laughing Buddha Cone",
+    "item.hempcraft.blunts.laughing_buddha": "Laughing Buddha Blunt",
+
+    "item.hempcraft.buds.sour_budda": "Sour Budda Bud",
+    "item.hempcraft.plants.sour_budda": "Sour Budda Plant",
+    "item.hempcraft.seeds.sour_budda": "Sour Budda Seeds",
+    "item.hempcraft.joints.sour_budda": "Sour Budda Joint",
+    "item.hempcraft.cones.sour_budda": "Sour Budda Cone",
+    "item.hempcraft.blunts.sour_budda": "Sour Budda Blunt",
+
+    "item.hempcraft.buds.blue_widow": "Blue Widow Bud",
+    "item.hempcraft.plants.blue_widow": "Blue Widow Plant",
+    "item.hempcraft.seeds.blue_widow": "Blue Widow Seeds",
+    "item.hempcraft.joints.blue_widow": "Blue Widow Joint",
+    "item.hempcraft.cones.blue_widow": "Blue Widow Cone",
+    "item.hempcraft.blunts.blue_widow": "Blue Widow Blunt",
+
+    "item.hempcraft.buds.holy_grain": "Holy Grain Bud",
+    "item.hempcraft.plants.holy_grain": "Holy Grain Plant",
+    "item.hempcraft.seeds.holy_grain": "Holy Grain Seeds",
+    "item.hempcraft.joints.holy_grain": "Holy Grain Joint",
+    "item.hempcraft.cones.holy_grain": "Holy Grain Cone",
+    "item.hempcraft.blunts.holy_grain": "Holy Grain Blunt",
+
+    "item.hempcraft.buds.scout_master": "Scout Master Bud",
+    "item.hempcraft.plants.scout_master": "Scout Master Plant",
+    "item.hempcraft.seeds.scout_master": "Scout Master Seeds",
+    "item.hempcraft.joints.scout_master": "Scout Master Joint",
+    "item.hempcraft.cones.scout_master": "Scout Master Cone",
+    "item.hempcraft.blunts.scout_master": "Scout Master Blunt",
+
+    "item.hempcraft.buds.rickys_special": "Rickys Special Bud",
+    "item.hempcraft.plants.rickys_special": "Rickys Special Plant",
+    "item.hempcraft.seeds.rickys_special": "Rickys Special Seeds",
+    "item.hempcraft.joints.rickys_special": "Rickys Special Joint",
+    "item.hempcraft.cones.rickys_special": "Rickys Special Cone",
+    "item.hempcraft.blunts.rickys_special": "Rickys Special Blunt",
+    
+    "item.hempcraft.purple_kush": "Purple Kush",
+    "item.hempcraft.plant_purple_kush": "Purple Kush Plant",
+    "item.hempcraft.seeds_purple_kush": "Purple Kush Seeds",
+    "item.hempcraft.joint_purple_kush": "Purple Kush Joint",
+
+    "block.hempcraft.hyacinth": "THE TEST PlANT"
+}

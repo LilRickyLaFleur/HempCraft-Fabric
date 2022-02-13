@@ -1,0 +1,50 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "hempcraft:item/joint",
+	"texture_size": [6, 1],
+	"textures": {
+		"0": "hempcraft:item/joint",
+		"particle": "hempcraft:item/joint"
+	},
+	"elements": [
+		{
+			"name": "Paper",
+			"from": [4, 6, 7],
+			"to": [14, 8, 9],
+			"faces": {
+				"north": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 2.66667, 16], "texture": "#0"},
+				"south": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 2.66667, 16], "texture": "#0"},
+				"up": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 10.66667, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Dark",
+			"from": [3, 6, 7],
+			"to": [4, 8, 9],
+			"faces": {
+				"north": {"uv": [10.66667, 0, 13.33333, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 3.2, 16], "texture": "#0"},
+				"south": {"uv": [10.66667, 0, 13.33333, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 3.2, 16], "texture": "#0"},
+				"up": {"uv": [10.66667, 0, 13.33333, 16], "texture": "#0"},
+				"down": {"uv": [10.66667, 0, 13.33333, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Heat",
+			"from": [2, 6, 7],
+			"to": [3, 8, 9],
+			"faces": {
+				"north": {"uv": [13.33333, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 3.2, 16], "texture": "#0"},
+				"south": {"uv": [13.33333, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [13.33333, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [13.33333, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [13.33333, 0, 16, 16], "texture": "#0"}
+			}
+		}
+	]
+}

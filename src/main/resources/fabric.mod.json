@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.hempcraft.hempcraft.HempCraft"
+      "net.lilricky.hempcraft.HempCraft"
     ]
   },
   "mixins": [

@@ -1,0 +1,76 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "hempcraft:item/joint",
+	"texture_size": [6, 1],
+	"textures": {
+		"0": "hempcraft:item/joint",
+		"particle": "hempcraft:item/joint"
+	},
+	"elements": [
+		{
+			"name": "Paper",
+			"from": [4, 6, 7],
+			"to": [12, 8, 7],
+			"faces": {
+				"north": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"east": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"south": {"uv": [10.66666, 0, 13.33333, 16], "texture": "#0"},
+				"west": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"up": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 10.66667, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Paper",
+			"from": [4, 6, 9],
+			"to": [12, 8, 9],
+			"faces": {
+				"north": {"uv": [10.66666, 0, 13.33333, 16], "texture": "#0"},
+				"east": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"south": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"west": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"up": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 10.66667, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Paper",
+			"from": [4, 8, 7],
+			"to": [12, 8, 9],
+			"faces": {
+				"north": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"east": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"south": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"west": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"up": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"down": {"uv": [10.66666, 0, 13.33333, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Paper",
+			"from": [4, 6, 7],
+			"to": [12, 6, 9],
+			"faces": {
+				"north": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"east": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"south": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"west": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"up": {"uv": [10.66666, 0, 13.33333, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 10.66667, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Paper",
+			"from": [12, 6, 7],
+			"to": [14, 8, 9],
+			"faces": {
+				"north": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 2.66667, 16], "texture": "#0"},
+				"south": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"west": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"up": {"uv": [8, 0, 10.66667, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 10.66667, 16], "texture": "#0"}
+			}
+		}
+	]
+}
