@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        "PPP",
+        "PPP"
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:paper"
+        }
+    },
+    "result": {
+        "item": "hempcraft:joint_paper",
+        "count": 32
+    }
+}

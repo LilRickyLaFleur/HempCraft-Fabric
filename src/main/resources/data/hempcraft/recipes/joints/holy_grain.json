@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": 
+    [
+        "WWW",
+        "PPP"
+    ],
+    "key":
+    {
+        "P": { "item": "hempcraft:joint_paper" },
+        "W": { "item": "hempcraft:bud/holy_grain" }
+    },
+    "result":
+    {
+        "item": "hempcraft:joint/holy_grain",
+        "count": 1
+    }
+}

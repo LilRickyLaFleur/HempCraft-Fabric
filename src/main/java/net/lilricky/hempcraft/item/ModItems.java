@@ -30,12 +30,10 @@ public class ModItems
 
     public static void registerModItems()
     {
-        FabricItemSettings default_item_settings = new FabricItemSettings().group(HempCraft.HC_ITEM_GROUP);
-
         // Empty Shells
-        registerItem("joint_paper", new Item(default_item_settings));
-        registerItem("empty_cone", new Item(default_item_settings));
-        registerItem("empty_blunt", new Item(default_item_settings));
+        registerItem("joint_paper", new Item(HempCraft.default_item_settings));
+        registerItem("empty_cone", new Item(HempCraft.default_item_settings));
+        registerItem("empty_blunt", new Item(HempCraft.default_item_settings));
 
         // GRADE A
         new HC_Strain("og_kush").A();
