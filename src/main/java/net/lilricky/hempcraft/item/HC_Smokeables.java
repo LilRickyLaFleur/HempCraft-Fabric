@@ -16,16 +16,18 @@ public class HC_Smokeables
     private StatusEffect Effect1;
     private StatusEffect Effect2;
     private StatusEffect Effect3;
+    private StatusEffect Effect4;
 
 
     // Builds All Smokeable Items from Strain List.
-    public HC_Smokeables(String name, StatusEffect effect1, StatusEffect effect2, StatusEffect effect3)
+    public HC_Smokeables(String name, StatusEffect effect1, StatusEffect effect2, StatusEffect effect3, StatusEffect effect4)
     {
 
         Name = name;
         Effect1 = effect1;
         Effect2 = effect2;
         Effect3 = effect3;
+        Effect4 = effect4;
 
         BUILD("joint");
         BUILD("cone");
@@ -38,40 +40,65 @@ public class HC_Smokeables
     private void BUILD(String ID)
     {
         FoodComponent fc = null;
+        int duration = 0;
 
         if(ID == "joint")
         {
-            fc = new FoodComponent.Builder()
-            .hunger(0)
-            .statusEffect(new StatusEffectInstance(Effect1, 1), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect2, 1), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect3, 1), 1.0f)
-            .alwaysEdible()
-            .saturationModifier(0.2f)
-            .build();
+            duration = 1;
         }
         else if(ID == "cone")
         {
-            fc = new FoodComponent.Builder()
-            .hunger(0)
-            .statusEffect(new StatusEffectInstance(Effect1, 2), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect2, 2), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect3, 2), 1.0f)
-            .alwaysEdible()
-            .saturationModifier(0.2f)
-            .build();
+            duration = 2;
         }
         else if(ID == "blunt")
         {
+            duration = 3;
+            
+        }
+
+        if(Effect1 != null)
+        {
             fc = new FoodComponent.Builder()
             .hunger(0)
-            .statusEffect(new StatusEffectInstance(Effect1, 3), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect2, 3), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect3, 3), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect1, duration), 1.0f)
             .alwaysEdible()
             .saturationModifier(0.2f)
             .build();
         }
+        else if(Effect2 != null)
+        {
+            fc = new FoodComponent.Builder()
+            .hunger(0)
+            .statusEffect(new StatusEffectInstance(Effect1, duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect2, duration), 1.0f)
+            .alwaysEdible()
+            .saturationModifier(0.2f)
+            .build();
+        }
+        else if(Effect3 != null)
+        {
+            fc = new FoodComponent.Builder()
+            .hunger(0)
+            .statusEffect(new StatusEffectInstance(Effect1, duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect2, duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect3, duration), 1.0f)
+            .alwaysEdible()
+            .saturationModifier(0.2f)
+            .build();
+        }
+        else if(Effect4 != null)
+        {
+            fc = new FoodComponent.Builder()
+            .hunger(0)
+            .statusEffect(new StatusEffectInstance(Effect1, duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect2, duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect3, duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect4, duration), 1.0f)
+            .alwaysEdible()
+            .saturationModifier(0.2f)
+            .build();
+        }
+
 
         // Register Joints, Cones, and Blunt objects.
         ModItems.registerItem(ID + "/" + Name, new Item(new FabricItemSettings().food(fc).group(HempCraft.HC_ITEM_GROUP))
@@ -83,6 +110,6 @@ public class HC_Smokeables
             }
         });
 
-        HempCraft.LOGGER.info(ID + ": " + Name + " Loaded!");
+        HempCraft.LOGGER.info("Generated: " + ID + ": " + Name);
     }
 }
