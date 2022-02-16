@@ -3,6 +3,7 @@ package net.lilricky.hempcraft;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.lilricky.hempcraft.block.ModBlocks;
 import net.lilricky.hempcraft.item.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -30,6 +31,7 @@ public class HempCraft implements ModInitializer {
 
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("HempCraft Loaded!");
 	}
