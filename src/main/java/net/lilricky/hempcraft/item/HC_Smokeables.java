@@ -4,7 +4,6 @@
 
 package net.lilricky.hempcraft.item;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
@@ -229,8 +228,19 @@ public class HC_Smokeables
         String arr[] = Arrays.copyOf(tooltips.toArray(), tooltips.size(), String[].class);
         HempCraft.LOGGER.info("Tooltips Generated: " + tooltips.toString());      
 
+        // Sets how rare the strain is based on its grade.
+        Rarity raritysetting = Rarity.COMMON;
+        if(Grade == "AA")
+        {
+            raritysetting = Rarity.UNCOMMON;
+        }
+        else if(Grade == "AAA")
+        {
+            raritysetting = Rarity.RARE;
+        }
+
         // Registers Item generated into the registry.
-        ModItems.registerItem(ID + "/" + Name, new Item(new FabricItemSettings().food(fc).group(HempCraft.HC_ITEM_GROUP))
+        ModItems.registerItem(ID + "/" + Name, new Item(new FabricItemSettings().rarity(raritysetting).food(fc).group(HempCraft.HC_ITEM_GROUP))
         {
             @Override
             public UseAction getUseAction(ItemStack stack)
@@ -261,6 +271,4 @@ public class HC_Smokeables
 
         HempCraft.LOGGER.info("Generated: " + ID + ": " + Name);
     }
-
-   
 }

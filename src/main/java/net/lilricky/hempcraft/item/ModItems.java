@@ -4,12 +4,9 @@
 
 package net.lilricky.hempcraft.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.lilricky.hempcraft.HempCraft;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
