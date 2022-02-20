@@ -4,15 +4,29 @@
 
 package net.lilricky.hempcraft.item;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Stack;
+
+import javax.annotation.Nullable;
+
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.lilricky.hempcraft.HempCraft;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Formatting;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.UseAction;
+import net.minecraft.world.World;
 
 public class HC_Smokeables 
 {
@@ -32,6 +46,8 @@ public class HC_Smokeables
     private StatusEffect Effect4;
     private int effect4_duration = -1;
 
+    private String Grade;
+
     // Constructor for the strain
     public HC_Smokeables(String name)
     {
@@ -44,6 +60,7 @@ public class HC_Smokeables
     {
         Effect1 = StatusEffects.INSTANT_HEALTH;
         Effect2 = StatusEffects.SLOWNESS;
+        Grade = "A";
         
         HempCraft.LOGGER.info("Creating Strain A");
 
@@ -55,6 +72,7 @@ public class HC_Smokeables
     {
         Effect1 = effect1;
         Effect2 = effect2;
+        Grade = "AA";
 
         HempCraft.LOGGER.debug("Creating Strain AA");
         BuildAll();
@@ -66,6 +84,7 @@ public class HC_Smokeables
         Effect1 = effect1;
         Effect2 = effect2;
         Effect3 = effect3;
+        Grade = "AAA";
 
         HempCraft.LOGGER.debug("Creating Strain AAA");
         BuildAll();
@@ -146,11 +165,55 @@ public class HC_Smokeables
             if(ID == "blunt") { effect4_duration = 3; }
         }
 
+        // Generate Tooltips
+        Stack<String> tooltips = new Stack<String>();
+        
+
         // Food Builder Sequence
         // Finds how many effects a strain has, and initiates the builder dependant on effects.
+        if(Effect1 != null)
+        {
+            HempCraft.LOGGER.info("Effect 1 Exists");
+            tooltips.push(Effect1.getTranslationKey());
+
+            fc = new FoodComponent.Builder()
+            .hunger(0)
+            .statusEffect(new StatusEffectInstance(Effect1, effect1_duration), 1.0f)
+            .alwaysEdible()
+            .saturationModifier(0.2f)
+            .build();
+        }
+        if(Effect2 != null)
+        {
+            HempCraft.LOGGER.info("Effect 2 Exists");
+            tooltips.push(Effect2.getTranslationKey());
+            
+            fc = new FoodComponent.Builder()
+            .hunger(0)
+            .statusEffect(new StatusEffectInstance(Effect1, effect1_duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect2, effect2_duration), 1.0f)
+            .alwaysEdible()
+            .saturationModifier(0.2f)
+            .build();
+        }
+        if(Effect3 != null)
+        {
+            HempCraft.LOGGER.info("Effect 3 Exists");
+            tooltips.push(Effect3.getTranslationKey());
+
+            fc = new FoodComponent.Builder()
+            .hunger(0)
+            .statusEffect(new StatusEffectInstance(Effect1, effect1_duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect2, effect2_duration), 1.0f)
+            .statusEffect(new StatusEffectInstance(Effect3, effect3_duration), 1.0f)
+            .alwaysEdible()
+            .saturationModifier(0.2f)
+            .build();
+        }
         if(Effect4 != null)
         {
-            HempCraft.LOGGER.debug("Effect 4 Exists");
+            HempCraft.LOGGER.info("Effect 4 Exists");
+            tooltips.push(Effect4.getTranslationKey());
 
             fc = new FoodComponent.Builder()
             .hunger(0)
@@ -162,42 +225,9 @@ public class HC_Smokeables
             .saturationModifier(0.2f)
             .build();
         }
-        else if(Effect3 != null)
-        {
-            HempCraft.LOGGER.debug("Effect 3 Exists");
-
-            fc = new FoodComponent.Builder()
-            .hunger(0)
-            .statusEffect(new StatusEffectInstance(Effect1, effect1_duration), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect2, effect2_duration), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect3, effect3_duration), 1.0f)
-            .alwaysEdible()
-            .saturationModifier(0.2f)
-            .build();
-        }
-        else if(Effect2 != null)
-        {
-            HempCraft.LOGGER.debug("Effect 2 Exists");
-            
-            fc = new FoodComponent.Builder()
-            .hunger(0)
-            .statusEffect(new StatusEffectInstance(Effect1, effect1_duration), 1.0f)
-            .statusEffect(new StatusEffectInstance(Effect2, effect2_duration), 1.0f)
-            .alwaysEdible()
-            .saturationModifier(0.2f)
-            .build();
-        }
-        else if(Effect1 != null)
-        {
-            HempCraft.LOGGER.debug("Effect 1 Exists");
-
-            fc = new FoodComponent.Builder()
-            .hunger(0)
-            .statusEffect(new StatusEffectInstance(Effect1, effect1_duration), 1.0f)
-            .alwaysEdible()
-            .saturationModifier(0.2f)
-            .build();
-        }
+        
+        String arr[] = Arrays.copyOf(tooltips.toArray(), tooltips.size(), String[].class);
+        HempCraft.LOGGER.info("Tooltips Generated: " + tooltips.toString());      
 
         // Registers Item generated into the registry.
         ModItems.registerItem(ID + "/" + Name, new Item(new FabricItemSettings().food(fc).group(HempCraft.HC_ITEM_GROUP))
@@ -207,6 +237,26 @@ public class HC_Smokeables
             {
                 return UseAction.BOW;
             }
+
+            @Override
+            public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context)
+            {
+                if(Screen.hasShiftDown())
+                {
+                    tooltip.add(new TranslatableText("Effects:").formatted(Formatting.ITALIC, Formatting.GOLD));
+                    
+                    for(int i = 0; i < arr.length; i++)
+                    {
+                        tooltip.add(new TranslatableText(arr[i]));
+                    }
+
+                }
+                else
+                {
+                    tooltip.add(new TranslatableText("HempCraft").formatted(Formatting.ITALIC, Formatting.GOLD));
+                }
+            }
+
         });
 
         HempCraft.LOGGER.info("Generated: " + ID + ": " + Name);
