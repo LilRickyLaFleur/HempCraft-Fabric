@@ -41,7 +41,7 @@ strains = [
     "og_hunter",
     "dolphin_daydream",
     "sour_budda",
-    "blue_window",
+    "blue_widow",
     "holy_grain",
     "scout_master",
     "rickys_special"
