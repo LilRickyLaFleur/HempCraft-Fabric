@@ -239,6 +239,11 @@ public class HC_Smokeables
             raritysetting = Rarity.RARE;
         }
 
+        // Grabs the highest effect Duration
+        int[] effect_durations = {effect1_duration, effect2_duration, effect3_duration};
+        int largest_duration = HempCraft.findLargestInt(effect_durations);
+
+
         // Registers Item generated into the registry.
         ModItems.registerItem(ID + "/" + Name, new Item(new FabricItemSettings().rarity(raritysetting).food(fc).group(HempCraft.HC_ITEM_GROUP))
         {
@@ -259,6 +264,8 @@ public class HC_Smokeables
                     {
                         tooltip.add(new TranslatableText(arr[i]));
                     }
+
+                    tooltip.add(new TranslatableText("Duration: " + (largest_duration / 20) + " seconds").formatted(Formatting.ITALIC, Formatting.GRAY));
 
                 }
                 else

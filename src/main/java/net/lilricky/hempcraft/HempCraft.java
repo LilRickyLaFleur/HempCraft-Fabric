@@ -34,5 +34,24 @@ public class HempCraft implements ModInitializer {
 		LOGGER.info("HempCraft Loaded!");
 	}
 
+	// General Tools
+
+	// Finds the largest integer in a array
+	public static int findLargestInt(int[] Array)
+	{
+		int maxNum = Array[0];
+
+		for (int j : Array)
+		{
+			if(j > maxNum)
+			{
+				maxNum = j;
+			}
+		}
+
+		return maxNum;
+		
+	}
+
 
 }
