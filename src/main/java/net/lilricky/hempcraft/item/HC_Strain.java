@@ -15,8 +15,8 @@ public class HC_Strain
     public HC_Strain(String name)
     {
         this.Name = name;
-        bud(name);
-        seed(name);
+        bud();
+        seed();
     }
 
     // Generates a Grade A Strain
@@ -38,14 +38,15 @@ public class HC_Strain
     }
 
     // Generates a Bud (crafting item)
-    private void bud(String name)
+    private void bud()
     {
-        ModItems.registerItem("bud/" + name, new Item(HempCraft.default_item_settings));
+        ModItems.registerItem("bud/" + Name, new Item(HempCraft.default_item_settings));
     }
 
     // Generates a Seed (farming item)
-    private void seed(String name)
+    private void seed()
     {
-        ModItems.registerItem("seed/" + name, new Item(HempCraft.default_item_settings));
+        ModItems.registerItem("seed/" + Name, new Item(HempCraft.default_item_settings));
     }
+
 }
