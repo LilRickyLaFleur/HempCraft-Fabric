@@ -23,17 +23,20 @@ strains = [
 ]
 
 
-# THIS WILL OVERWRITE ANY FILES IN THE DIRECTORY WITH THE SAME NAME
-# IF YOU ARE OK WITH THIS, RUN THE SCRIPT
-dir_item_models = "out/item/"
-dir_blockstates = "out/blockstates/"
-dir_loottables = "out/loot_tables/blocks/"
+# Change out_dir to where you want the files to go. Include the last slash.
+out_dir = "out/"
+# out_dir = "src/main/resources/"
+dir_item_models = out_dir + "assets/hempcraft/models/item/"
+dir_blockstates = out_dir + "assets/hempcraft/blockstates/"
+dir_loottables = out_dir + "data/hempcraft/loot_tables/"
 
 
-# TODO: Seperate the Block generation with the item generation
 # Block generation files
 # - src\main\resources\assets\hempcraft\blockstates\plant\          #? Blockstates for plants
 # - src\main\resources\data\hempcraft\loot_tables\blocks\plant\     #? Loot Tables for plant
+
+# TODO: Generate Recipes for joints, cones, and blunts.
+
 
 # Creates a Directory if non exists
 def createDir(path):
@@ -41,13 +44,15 @@ def createDir(path):
         os.makedirs(path)
         print("Created Directory: " + path)
 
-
+# Writes JSON to a file of specific directory.
 def writeJSON(dir, type, name, data):
+    createDir(dir + type)
     with open(dir + type + "/" + name + ".json", 'w') as f:
         json.dump(data, f)
         print("Generated: " + dir + type + ":" + name)
     f.close
 
+# Generates the loot table based off of JSON
 def generateLootTable(name):
     return {
   "type": "minecraft:block",
@@ -118,15 +123,15 @@ def generateLootTable(name):
   ]
 }
 
-print("Creating Dirs")
-createDir(dir_item_models)
-createDir(dir_blockstates + "plant/")
-createDir(dir_loottables + "plant/")
-createDir(dir_item_models + "seed/")
-createDir(dir_item_models + "bud/")
-createDir(dir_item_models + "joint/")
-createDir(dir_item_models + "cone/")
-createDir(dir_item_models + "blunt/")
+# print("Creating Dirs")
+# createDir(dir_item_models)
+# createDir(dir_blockstates + "plant/")
+# createDir(dir_loottables + "plant/")
+# createDir(dir_item_models + "seed/")
+# createDir(dir_item_models + "bud/")
+# createDir(dir_item_models + "joint/")
+# createDir(dir_item_models + "cone/")
+# createDir(dir_item_models + "blunt/")
 
 
 # Model Objects for items
@@ -178,9 +183,5 @@ for x in strains:
     writeJSON(dir_item_models, "cone", x, item_cones)
     writeJSON(dir_item_models, "blunt", x, item_blunts)
     writeJSON(dir_blockstates, "plant", x, blockstate_plant)
-
-    writeJSON(dir_loottables, "plant", x, generateLootTable(x))
-
-
-
+    writeJSON(dir_loottables + "blocks/", "plant", x, generateLootTable(x))
 
