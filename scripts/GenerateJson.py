@@ -21,7 +21,7 @@ strains = [
     "scout_master",
     "rickys_special"
 ]
-
+ 
 
 # Change out_dir to where you want the files to go. Include the last slash.
 # out_dir = "out/"
@@ -29,11 +29,7 @@ out_dir = "src/main/resources/"
 dir_item_models = out_dir + "assets/hempcraft/models/item/"
 dir_blockstates = out_dir + "assets/hempcraft/blockstates/"
 dir_loottables = out_dir + "data/hempcraft/loot_tables/"
-
-
-# Block generation files
-# - src\main\resources\assets\hempcraft\blockstates\plant\          #? Blockstates for plants
-# - src\main\resources\data\hempcraft\loot_tables\blocks\plant\     #? Loot Tables for plant
+dir_recipe = out_dir + "/data/hempcraft/recipes/"
 
 # TODO: Generate Recipes for joints, cones, and blunts.
 
@@ -123,15 +119,25 @@ def generateLootTable(name):
   ]
 }
 
-# print("Creating Dirs")
-# createDir(dir_item_models)
-# createDir(dir_blockstates + "plant/")
-# createDir(dir_loottables + "plant/")
-# createDir(dir_item_models + "seed/")
-# createDir(dir_item_models + "bud/")
-# createDir(dir_item_models + "joint/")
-# createDir(dir_item_models + "cone/")
-# createDir(dir_item_models + "blunt/")
+def generateRecipe(name, type):
+    return {
+    "type": "minecraft:crafting_shaped",
+    "pattern": 
+    [
+        "WWW",
+        "PPP"
+    ],
+    "key":
+    {
+        "P": { "item": "hempcraft:" + type },
+        "W": { "item": "hempcraft:bud/" + name }
+    },
+    "result":
+    {
+        "item": "hempcraft:joint/" + name,
+        "count": 1
+    }
+}
 
 
 # Model Objects for items
@@ -184,4 +190,5 @@ for x in strains:
     writeJSON(dir_item_models, "blunt", x, item_blunts)
     writeJSON(dir_blockstates, "plant", x, blockstate_plant)
     writeJSON(dir_loottables + "blocks/", "plant", x, generateLootTable(x))
+    writeJSON(dir_recipe, "joint", x, generateRecipe(x, "joint"))
 
