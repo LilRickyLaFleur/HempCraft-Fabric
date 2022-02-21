@@ -10,17 +10,18 @@ import net.minecraft.item.ItemConvertible;
 public class Plant extends CropBlock
 {
 
-    Item Seed;
-    public Plant(Settings settings, String name, Item seed) 
+    String Name;
+
+    public Plant(Settings settings, String name) 
     {        
         super(settings);
-        Seed = seed;
+        Name = name;
         HempCraft.LOGGER.info("Plant.java: Plant(): " + name);
     }
 
     @Override
     protected ItemConvertible getSeedsItem() 
     {
-        return Seed;
+        return Plants.Seed;
     }
 }

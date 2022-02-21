@@ -26,7 +26,8 @@ public class HC_Strain
         HempCraft.LOGGER.info("New Strain: " + name);
         this.Name = name;
         bud();
-        Plant = ModBlocks.registerBlockWithoutBlockItem("plant/" + Name, new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), Name, ModItems.registerItem("seed/" + Name, new AliasedBlockItem(Plant, HempCraft.default_item_settings))));
+        new Plants(name);
+        // Plant = ModBlocks.registerBlockWithoutBlockItem("plant/" + Name, new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), Name, ModItems.registerItem("seed/" + Name, new AliasedBlockItem(Plant, HempCraft.default_item_settings))));
 
         
         // TODO: Implement the blocks for plants somehere here.

@@ -7,6 +7,7 @@ import os
 # THIS WILL OVERWRITE ANY FILES IN THE DIRECTORY WITH THE SAME NAME
 # IF YOU ARE OK WITH THIS, RUN THE SCRIPT
 out = "src/main/resources/assets/hempcraft/models/item/"
+dir_block_models = "src/main/resources/assets/hempcraft/models/block/"
 
 print("Creating Dirs")
 
@@ -18,6 +19,10 @@ if not os.path.exists(out + "seed"):
 if not os.path.exists(out + "bud"):
     os.mkdir(out + "bud")
     print("Created: " + out + "bud")
+
+if not os.path.exists(dir_block_models + "plant"):
+    os.mkdir(dir_block_models + "plant")
+    print("Created: " + dir_block_models + "plant")
 
 if not os.path.exists(out + "joint"):
     os.mkdir(out + "joint")
@@ -73,9 +78,9 @@ for x in strains:
     f.close()
 
     # Plants
-    with open(out + 'plant/' + x + ".json", 'w') as f:
+    with open(dir_block_models + 'plant/' + x + ".json", 'w') as f:
         json.dump(plants, f)
-        print("Generated: " + out + "plant/" + x + ".json")
+        print("Generated: " + dir_block_models + "plant/" + x + ".json")
     f.close()
 
     # Joints

@@ -21,6 +21,8 @@ public class Plants
     // Generate the Seed
     // public static final Item Seed = ModItems.registerItem(Name, new AliasedBlockItem(Plant, HempCraft.default_item_settings));
 
+    public static Block Plant;
+    public static Item Seed;
     
 
     public Plants(String name)
@@ -29,8 +31,10 @@ public class Plants
         //! HC_STRAIN Will call this shit
         // ? Its similar to src\main\java\net\lilricky\hempcraft\item\HC_Strain.java
 
-        
+        HempCraft.LOGGER.info("Plants.java: Creating plant and seed: " + name);
 
+        Plant = ModBlocks.registerBlockWithoutBlockItem("plant/" + name, new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), name));
+        Seed = ModItems.registerItem("seed/" + name, new AliasedBlockItem(Plant, HempCraft.default_item_settings));
     }
 
 }

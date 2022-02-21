@@ -172,7 +172,7 @@ public class HC_Smokeables
         // Finds how many effects a strain has, and initiates the builder dependant on effects.
         if(Effect1 != null)
         {
-            HempCraft.LOGGER.info("Effect 1 Exists");
+            // HempCraft.LOGGER.info("Effect 1 Exists");
             tooltips.push(Effect1.getTranslationKey());
 
             fc = new FoodComponent.Builder()
@@ -184,7 +184,7 @@ public class HC_Smokeables
         }
         if(Effect2 != null)
         {
-            HempCraft.LOGGER.info("Effect 2 Exists");
+            // HempCraft.LOGGER.info("Effect 2 Exists");
             tooltips.push(Effect2.getTranslationKey());
             
             fc = new FoodComponent.Builder()
@@ -197,7 +197,7 @@ public class HC_Smokeables
         }
         if(Effect3 != null)
         {
-            HempCraft.LOGGER.info("Effect 3 Exists");
+            // HempCraft.LOGGER.info("Effect 3 Exists");
             tooltips.push(Effect3.getTranslationKey());
 
             fc = new FoodComponent.Builder()
@@ -211,7 +211,7 @@ public class HC_Smokeables
         }
         if(Effect4 != null)
         {
-            HempCraft.LOGGER.info("Effect 4 Exists");
+            // HempCraft.LOGGER.info("Effect 4 Exists");
             tooltips.push(Effect4.getTranslationKey());
 
             fc = new FoodComponent.Builder()
