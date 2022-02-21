@@ -24,8 +24,8 @@ strains = [
 
 
 # Change out_dir to where you want the files to go. Include the last slash.
-out_dir = "out/"
-# out_dir = "src/main/resources/"
+# out_dir = "out/"
+out_dir = "src/main/resources/"
 dir_item_models = out_dir + "assets/hempcraft/models/item/"
 dir_blockstates = out_dir + "assets/hempcraft/blockstates/"
 dir_loottables = out_dir + "data/hempcraft/loot_tables/"
