@@ -50,6 +50,7 @@ strains = [
 # List Of Objects
 seeds = { "parent" : "hempcraft:item/seeds" }
 buds = { "parent": "hempcraft:item/bud" }
+plants = {"parent" : "hempcraft:block/plant" }
 joints = { "parent": "hempcraft:item/joint" }
 cones = { "parent": "hempcraft:item/cone" }
 blunts = { "parent": "hempcraft:item/blunt" }
@@ -69,6 +70,12 @@ for x in strains:
     with open(out + 'bud/' + x + ".json", 'w') as f:
         json.dump(buds, f)
         print("Generated: " + out + "bud/" + x + ".json")
+    f.close()
+
+    # Plants
+    with open(out + 'plant/' + x + ".json", 'w') as f:
+        json.dump(plants, f)
+        print("Generated: " + out + "plant/" + x + ".json")
     f.close()
 
     # Joints

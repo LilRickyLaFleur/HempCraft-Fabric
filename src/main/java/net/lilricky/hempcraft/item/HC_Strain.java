@@ -3,20 +3,34 @@
 // for generation of the items / blocks.
 package net.lilricky.hempcraft.item;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.lilricky.hempcraft.HempCraft;
+import net.lilricky.hempcraft.block.ModBlocks;
+import net.lilricky.hempcraft.block.Plants;
+import net.lilricky.hempcraft.block.custom.Plant;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 
 public class HC_Strain
 {  
-    String Name;
+    public static String Name;
+
+    public static Block Plant;
 
     // Constructor
     public HC_Strain(String name)
     {
+        HempCraft.LOGGER.info("New Strain: " + name);
         this.Name = name;
         bud();
-        seed();
+        Plant = ModBlocks.registerBlockWithoutBlockItem("plant/" + Name, new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), Name, ModItems.registerItem("seed/" + Name, new AliasedBlockItem(Plant, HempCraft.default_item_settings))));
+
+        
+        // TODO: Implement the blocks for plants somehere here.
+        
     }
 
     // Generates a Grade A Strain
@@ -41,12 +55,6 @@ public class HC_Strain
     private void bud()
     {
         ModItems.registerItem("bud/" + Name, new Item(HempCraft.default_item_settings));
-    }
-
-    // Generates a Seed (farming item)
-    private void seed()
-    {
-        ModItems.registerItem("seed/" + Name, new Item(HempCraft.default_item_settings));
     }
 
 }
