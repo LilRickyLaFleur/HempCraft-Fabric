@@ -9,6 +9,11 @@ import os
 out = "src/main/resources/assets/hempcraft/models/item/"
 dir_block_models = "src/main/resources/assets/hempcraft/models/block/"
 
+# TODO: Seperate the Block generation with the item generation
+# Block generation files
+# - src\main\resources\assets\hempcraft\blockstates\plant\
+# 
+
 print("Creating Dirs")
 
 # Make Directories if none exists
