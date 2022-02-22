@@ -31,8 +31,6 @@ dir_blockstates = out_dir + "assets/hempcraft/blockstates/"
 dir_loottables = out_dir + "data/hempcraft/loot_tables/"
 dir_recipe = out_dir + "/data/hempcraft/recipes/"
 
-# TODO: Generate Recipes for joints, cones, and blunts.
-
 
 # Creates a Directory if non exists
 def createDir(path):
