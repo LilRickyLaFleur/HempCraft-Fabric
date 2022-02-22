@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:joint_paper"}, "W": {"item": "hempcraft:bud/blue_widow"}}, "result": {"item": "hempcraft:joint/blue_widow", "count": 1}}

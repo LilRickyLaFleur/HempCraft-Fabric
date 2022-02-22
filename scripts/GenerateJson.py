@@ -120,21 +120,30 @@ def generateLootTable(name):
 }
 
 def generateRecipe(name, type):
+
+    wrapper = type
+    if type == "joint":
+        wrapper = "joint_paper"
+    elif type == "cone":
+        wrapper = "empty_cone"
+    elif type == "blunt":
+        wrapper = "empty_blunt"
+
     return {
     "type": "minecraft:crafting_shaped",
     "pattern": 
     [
-        "WWW",
-        "PPP"
+        "W",
+        "P"
     ],
     "key":
     {
-        "P": { "item": "hempcraft:" + type },
+        "P": { "item": "hempcraft:" + wrapper },
         "W": { "item": "hempcraft:bud/" + name }
     },
     "result":
     {
-        "item": "hempcraft:joint/" + name,
+        "item": "hempcraft:" + type + "/" + name,
         "count": 1
     }
 }
@@ -191,4 +200,6 @@ for x in strains:
     writeJSON(dir_blockstates, "plant", x, blockstate_plant)
     writeJSON(dir_loottables + "blocks/", "plant", x, generateLootTable(x))
     writeJSON(dir_recipe, "joint", x, generateRecipe(x, "joint"))
+    writeJSON(dir_recipe, "cone", x, generateRecipe(x, "cone"))
+    writeJSON(dir_recipe, "blunt", x, generateRecipe(x, "blunt"))
 

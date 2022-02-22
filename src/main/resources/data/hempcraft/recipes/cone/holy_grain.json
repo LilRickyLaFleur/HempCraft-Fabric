@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:empty_cone"}, "W": {"item": "hempcraft:bud/holy_grain"}}, "result": {"item": "hempcraft:cone/holy_grain", "count": 1}}
