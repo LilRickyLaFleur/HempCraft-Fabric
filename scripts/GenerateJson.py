@@ -1,6 +1,9 @@
 # This script will use a list of strains in order to generate the model files for the strains.
 # All files generated will be put into the "out" directory in the main application.
 
+# Why? Generating the needed data outside of minecraft means less delay when loading the mod.
+# I could do it all in the mod itself, but why do it that way, when python is better ;)
+
 import json
 import os
 
@@ -29,7 +32,8 @@ out_dir = "src/main/resources/"
 dir_item_models = out_dir + "assets/hempcraft/models/item/"
 dir_blockstates = out_dir + "assets/hempcraft/blockstates/"
 dir_loottables = out_dir + "data/hempcraft/loot_tables/"
-dir_recipe = out_dir + "/data/hempcraft/recipes/"
+dir_recipe = out_dir + "data/hempcraft/recipes/"
+dir_advancements = out_dir + "/data/hempcraft/advancements/"
 
 
 # Creates a Directory if non exists
@@ -165,6 +169,29 @@ def generateRecipe(name, type):
     }
 }
 
+def generateAdvancements(name, type):
+  return {
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hempcraft:bud/" + name
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "hempcraft:" + type + "/" + name
+    ]
+  }
+}
+
 
 # Model Objects for items
 item_seeds = { "parent" : "hempcraft:item/seed" }
@@ -207,7 +234,8 @@ blockstate_plant = {
 print("Writing Files")
 
 
-# Writes files from objects
+# The actual generation
+# Goes through each strain, and uses the functions to write JSON files to their appropriate directories.
 for x in strains:
     writeJSON(dir_item_models, "seed", x, item_seeds)
     writeJSON(dir_item_models, "bud", x, item_buds)
@@ -219,4 +247,7 @@ for x in strains:
     writeJSON(dir_recipe, "joint", x, generateRecipe(x, "joint"))
     writeJSON(dir_recipe, "cone", x, generateRecipe(x, "cone"))
     writeJSON(dir_recipe, "blunt", x, generateRecipe(x, "blunt"))
+    writeJSON(dir_advancements, "joint", x, generateAdvancements(x, "joint"))
+    writeJSON(dir_advancements, "cone", x, generateAdvancements(x, "cone"))
+    writeJSON(dir_advancements, "blunt", x, generateAdvancements(x, "blunt"))
 

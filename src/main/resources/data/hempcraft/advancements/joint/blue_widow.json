@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/blue_widow"]}]}}}, "rewards": {"recipes": ["hempcraft:joint/blue_widow"]}}

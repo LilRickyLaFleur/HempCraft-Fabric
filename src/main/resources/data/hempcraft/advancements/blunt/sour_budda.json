@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/sour_budda"]}]}}}, "rewards": {"recipes": ["hempcraft:blunt/sour_budda"]}}

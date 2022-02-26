@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/dolphin_daydream"]}]}}}, "rewards": {"recipes": ["hempcraft:joint/dolphin_daydream"]}}

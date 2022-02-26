@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/rickys_special"]}]}}}, "rewards": {"recipes": ["hempcraft:blunt/rickys_special"]}}

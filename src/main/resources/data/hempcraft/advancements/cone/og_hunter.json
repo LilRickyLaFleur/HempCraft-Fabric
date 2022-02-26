@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/og_hunter"]}]}}}, "rewards": {"recipes": ["hempcraft:cone/og_hunter"]}}

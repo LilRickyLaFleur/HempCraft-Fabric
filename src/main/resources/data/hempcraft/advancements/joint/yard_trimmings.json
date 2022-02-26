@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/yard_trimmings"]}]}}}, "rewards": {"recipes": ["hempcraft:joint/yard_trimmings"]}}

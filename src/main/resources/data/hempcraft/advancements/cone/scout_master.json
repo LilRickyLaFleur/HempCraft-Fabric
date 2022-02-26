@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/scout_master"]}]}}}, "rewards": {"recipes": ["hempcraft:cone/scout_master"]}}

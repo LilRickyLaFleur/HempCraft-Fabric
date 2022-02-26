@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/chem_fruit"]}]}}}, "rewards": {"recipes": ["hempcraft:blunt/chem_fruit"]}}

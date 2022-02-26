@@ -1,0 +1,1 @@
+{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/green_golem"]}]}}}, "rewards": {"recipes": ["hempcraft:joint/green_golem"]}}
