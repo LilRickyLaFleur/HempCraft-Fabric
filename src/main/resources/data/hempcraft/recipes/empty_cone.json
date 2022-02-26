@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP"
+    ],
+    "key": {
+        "P": 
+        { 
+            "item": "hempcraft:hemp_leaf"
+        }
+    },
+    "result": {
+        "item": "hempcraft:empty_cone",
+        "count": 1
+    }
+}

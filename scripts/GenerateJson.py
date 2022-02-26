@@ -74,6 +74,10 @@ def generateLootTable(name):
             {
               "type": "minecraft:item",
               "name": "hempcraft:seed/" + name
+            },
+            {
+              "type": "minecraft:item",
+              "name": "hempcraft:hemp_leaf"
             }
           ]
         }
@@ -97,6 +101,21 @@ def generateLootTable(name):
             }
           ],
           "name": "hempcraft:seed/" + name
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:binomial_with_bonus_count",
+              "parameters": {
+                "extra": 3,
+                "probability": 0.5714286
+              }
+            }
+          ],
+          "name": "hempcraft:hemp_leaf"
         }
       ],
       "conditions": [

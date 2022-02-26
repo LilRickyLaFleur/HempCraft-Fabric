@@ -6,28 +6,28 @@
     
 
     "item.hempcraft.bud.yard_trimmings": "Yard Trimmings Bud",
-    "item.hempcraft.plant.yard_trimmings": "Yard Trimmings Plant",
+    "block.hempcraft.plant.yard_trimmings": "Yard Trimmings Plant",
     "item.hempcraft.seed.yard_trimmings": "Yard Trimmings Seeds",
     "item.hempcraft.joint.yard_trimmings": "Yard Trimmings Joint",
     "item.hempcraft.cone.yard_trimmings": "Yard Trimmings Cone",
     "item.hempcraft.blunt.yard_trimmings": "Yard Trimmings Blunt",
 
     "item.hempcraft.bud.miners_delight": "Miners Delight Bud",
-    "item.hempcraft.plant.miners_delight": "Miners Delight Plants",
+    "block.hempcraft.plant.miners_delight": "Miners Delight Plants",
     "item.hempcraft.seed.miners_delight": "Miners Delight Seed",
     "item.hempcraft.joint.miners_delight": "Miners Delight Joint",
     "item.hempcraft.cone.miners_delight": "Miners Delight Cone",
     "item.hempcraft.blunt.miners_delight": "Miners Delight Blunt",
 
     "item.hempcraft.bud.green_golem": "Green Golem Bud",
-    "item.hempcraft.plant.green_golem": "Green Golem Plants",
+    "block.hempcraft.plant.green_golem": "Green Golem Plants",
     "item.hempcraft.seed.green_golem": "Green Golem Seed",
     "item.hempcraft.joint.green_golem": "Green Golem Joint",
     "item.hempcraft.cone.green_golem": "Green Golem Cone",
     "item.hempcraft.blunt.green_golem": "Green Golem Blunt",
 
     "item.hempcraft.bud.og_hunter": "OG Hunter Bud",
-    "item.hempcraft.plant.og_hunter": "OG Hunter Plants",
+    "block.hempcraft.plant.og_hunter": "OG Hunter Plants",
     "item.hempcraft.seed.og_hunter": "OG Hunter Seed",
     "item.hempcraft.joint.og_hunter": "OG Hunter Joint",
     "item.hempcraft.cone.og_hunter": "OG Hunter Cone",
@@ -35,7 +35,7 @@
 
 
     "item.hempcraft.bud.dolphin_daydream": "Dolphin Daydream Bud",
-    "item.hempcraft.plant.dolphin_daydream": "Dolphin Daydream Plants",
+    "block.hempcraft.plant.dolphin_daydream": "Dolphin Daydream Plants",
     "item.hempcraft.seed.dolphin_daydream": "Dolphin Daydream Seed",
     "item.hempcraft.joint.dolphin_daydream": "Dolphin Daydream Joint",
     "item.hempcraft.cone.dolphin_daydream": "Dolphin Daydream Cone",
@@ -43,7 +43,7 @@
 
 
     "item.hempcraft.bud.strain_name": "Strain Name Bud",
-    "item.hempcraft.plant.strain_name": "Strain Name Plants",
+    "block.hempcraft.plant.strain_name": "Strain Name Plants",
     "item.hempcraft.seed.strain_name": "Strain Name Seed",
     "item.hempcraft.joint.strain_name": "Strain Name Joint",
     "item.hempcraft.cone.strain_name": "Strain Name Cone",
@@ -52,42 +52,42 @@
     
 
     "item.hempcraft.bud.sour_budda": "Sour Budda Bud",
-    "item.hempcraft.plant.sour_budda": "Sour Budda Plant",
+    "block.hempcraft.plant.sour_budda": "Sour Budda Plant",
     "item.hempcraft.seed.sour_budda": "Sour Budda Seeds",
     "item.hempcraft.joint.sour_budda": "Sour Budda Joint",
     "item.hempcraft.cone.sour_budda": "Sour Budda Cone",
     "item.hempcraft.blunt.sour_budda": "Sour Budda Blunt",
 
     "item.hempcraft.bud.blue_widow": "Blue Widow Bud",
-    "item.hempcraft.plant.blue_widow": "Blue Widow Plant",
+    "block.hempcraft.plant.blue_widow": "Blue Widow Plant",
     "item.hempcraft.seed.blue_widow": "Blue Widow Seeds",
     "item.hempcraft.joint.blue_widow": "Blue Widow Joint",
     "item.hempcraft.cone.blue_widow": "Blue Widow Cone",
     "item.hempcraft.blunt.blue_widow": "Blue Widow Blunt",
 
     "item.hempcraft.bud.holy_grain": "Holy Grain Bud",
-    "item.hempcraft.plant.holy_grain": "Holy Grain Plant",
+    "block.hempcraft.plant.holy_grain": "Holy Grain Plant",
     "item.hempcraft.seed.holy_grain": "Holy Grain Seeds",
     "item.hempcraft.joint.holy_grain": "Holy Grain Joint",
     "item.hempcraft.cone.holy_grain": "Holy Grain Cone",
     "item.hempcraft.blunt.holy_grain": "Holy Grain Blunt",
 
     "item.hempcraft.bud.scout_master": "Scout Master Bud",
-    "item.hempcraft.plant.scout_master": "Scout Master Plant",
+    "block.hempcraft.plant.scout_master": "Scout Master Plant",
     "item.hempcraft.seed.scout_master": "Scout Master Seeds",
     "item.hempcraft.joint.scout_master": "Scout Master Joint",
     "item.hempcraft.cone.scout_master": "Scout Master Cone",
     "item.hempcraft.blunt.scout_master": "Scout Master Blunt",
 
     "item.hempcraft.bud.rickys_special": "Rickys Special Bud",
-    "item.hempcraft.plant.rickys_special": "Rickys Special Plant",
+    "block.hempcraft.plant.rickys_special": "Rickys Special Plant",
     "item.hempcraft.seed.rickys_special": "Rickys Special Seeds",
     "item.hempcraft.joint.rickys_special": "Rickys Special Joint",
     "item.hempcraft.cone.rickys_special": "Rickys Special Cone",
     "item.hempcraft.blunt.rickys_special": "Rickys Special Blunt",
     
     "item.hempcraft.purple_kush": "Purple Kush",
-    "item.hempcraft.plant_purple_kush": "Purple Kush Plant",
+    "block.hempcraft.plant_purple_kush": "Purple Kush Plant",
     "item.hempcraft.seeds_purple_kush": "Purple Kush Seeds",
     "item.hempcraft.joint_purple_kush": "Purple Kush Joint",
 

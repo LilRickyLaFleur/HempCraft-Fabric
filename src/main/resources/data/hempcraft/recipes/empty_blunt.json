@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP"
+    ],
+    "key": {
+        "P": 
+        { 
+            "item": "minecraft:fern",
+            "item": "minecraft:large_fern"
+        }
+    },
+    "result": {
+        "item": "hempcraft:empty_blunt",
+        "count": 1
+    }
+}
