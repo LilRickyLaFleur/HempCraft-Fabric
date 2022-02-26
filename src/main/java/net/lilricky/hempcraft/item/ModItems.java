@@ -11,6 +11,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems 
 {
+    static Item Hemp_Leaf;
+
 
     public static Item registerItem(String name, Item item)
     {
@@ -23,6 +25,6 @@ public class ModItems
         ModItems.registerItem("joint_paper", new Item(HempCraft.default_item_settings));
         ModItems.registerItem("empty_cone", new Item(HempCraft.default_item_settings));
         ModItems.registerItem("empty_blunt", new Item(HempCraft.default_item_settings));
-        ModItems.registerItem("hemp_leaf", new Item(HempCraft.default_item_settings));
+        Hemp_Leaf = ModItems.registerItem("hemp_leaf", new Item(HempCraft.default_item_settings));
     }
 }

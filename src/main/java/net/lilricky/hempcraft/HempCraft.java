@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.lilricky.hempcraft.Strains.Strains;
 import net.lilricky.hempcraft.block.ModBlocks;
+import net.lilricky.hempcraft.item.ModItemGroup;
 import net.lilricky.hempcraft.item.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -19,8 +20,7 @@ public class HempCraft implements ModInitializer {
 	// MOD ID for the mod
 	public static final String MOD_ID = "hempcraft";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static ItemGroup HC_ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier("hempcraft", "general"), () -> new ItemStack(Items.GOLD_NUGGET));
-	public static FabricItemSettings default_item_settings = new FabricItemSettings().group(HempCraft.HC_ITEM_GROUP);
+	public static FabricItemSettings default_item_settings = new FabricItemSettings().group(ModItemGroup.HempCraft_Item_Group);
 
 	// Start Point
 	@Override

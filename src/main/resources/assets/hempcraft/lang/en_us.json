@@ -1,8 +1,9 @@
 {
-    "itemGroup.hempcraft.general": "HempCraft",
+    "itemGroup.hempcraft.hempcraft": "HempCraft",
     "item.hempcraft.joint_paper": "Joint Paper",
     "item.hempcraft.empty_cone": "Empty Cone",
     "item.hempcraft.empty_blunt": "Empty Blunt",
+    "item.hempcraft.hemp_leaf": "Hemp Leaf",
     
 
     "item.hempcraft.bud.yard_trimmings": "Yard Trimmings Bud",
@@ -89,8 +90,7 @@
     "item.hempcraft.purple_kush": "Purple Kush",
     "block.hempcraft.plant_purple_kush": "Purple Kush Plant",
     "item.hempcraft.seeds_purple_kush": "Purple Kush Seeds",
-    "item.hempcraft.joint_purple_kush": "Purple Kush Joint",
+    "item.hempcraft.joint_purple_kush": "Purple Kush Joint"
 
-    "block.hempcraft.hyacinth": "THE TEST PlANT"
 
 }

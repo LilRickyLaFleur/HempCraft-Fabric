@@ -245,7 +245,7 @@ public class HC_Smokeables
 
 
         // Registers Item generated into the registry.
-        ModItems.registerItem(ID + "/" + Name, new Item(new FabricItemSettings().rarity(raritysetting).food(fc).group(HempCraft.HC_ITEM_GROUP))
+        ModItems.registerItem(ID + "/" + Name, new Item(new FabricItemSettings().rarity(raritysetting).food(fc).group(ModItemGroup.HempCraft_Item_Group))
         {
             @Override
             public UseAction getUseAction(ItemStack stack)
