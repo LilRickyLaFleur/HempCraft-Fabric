@@ -10,17 +10,17 @@ Simple, rather than using potions, you use strains! Different strain have differ
 # What strains exist?
 |Strain|Grade|Effect|
 |-|-|-|
-|Yard Trimmings|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Instant Health, Slowness|
-|Chem Fruit|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Instant Health, Slowness|
-|Trainwreck|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Instant Health, Slowness|
-|Miners Delight|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Night Vision, Haste|
-|Green Golem|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Instant Health, Health Boost|
-|OG Hunter|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Invisibility, Speed|
-|Dolphin Daydream|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Dolphins Grace, Water Breathing|
-|Sour Budda|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Instant Health, Regeneration, Fire Resistance|
-|Blue Widow|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Instant Health, Strength, Night Vision|
-|Holy Grain|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Instant Health, Speed, Slow Falling|
-|Scout Master|![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)![Leaf](https://github.com/LilRickyLaFleur/HempCraft-Fabric/blob/63a6574e64d7fef5079ff09ac3243fafed43279e/src/main/resources/assets/hempcraft/textures/item/hemp_leaf.png)|Jump Boost, Speed, Luck|
+|Yard Trimmings|A|Instant Health, Slowness|
+|Chem Fruit|A|Instant Health, Slowness|
+|Trainwreck|A|Instant Health, Slowness|
+|Miners Delight|AA|Night Vision, Haste|
+|Green Golem|AA|Instant Health, Health Boost|
+|OG Hunter|AA|Invisibility, Speed|
+|Dolphin Daydream|AA|Dolphins Grace, Water Breathing|
+|Sour Budda|AAA|Instant Health, Regeneration, Fire Resistance|
+|Blue Widow|AAA|Instant Health, Strength, Night Vision|
+|Holy Grain|AAA|Instant Health, Speed, Slow Falling|
+|Scout Master|AAA|Jump Boost, Speed, Luck|
 
 
 # How does the mod work?
