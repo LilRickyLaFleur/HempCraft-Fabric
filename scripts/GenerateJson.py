@@ -55,6 +55,7 @@ def generateLootTable(name):
     return {
   "type": "minecraft:block",
   "pools": [
+
     {
       "rolls": 1,
       "bonus_rolls": 0,
@@ -74,13 +75,9 @@ def generateLootTable(name):
                   }
                 }
               ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "hempcraft:seed/" + name
             }
           ]
-        }
+        },
       ]
     },
     {
@@ -93,6 +90,12 @@ def generateLootTable(name):
             {
               "type": "minecraft:item",
               "name": "hempcraft:hemp_leaf",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 3
+                }
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
@@ -104,7 +107,22 @@ def generateLootTable(name):
               ]
             }
           ]
-        }
+        },
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "hempcraft:seed/" + name
+            }
+          ]
+        },
       ]
     },
     {
@@ -134,7 +152,7 @@ def generateLootTable(name):
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 3,
+                "extra": 9,
                 "probability": 0.5714286
               }
             }
@@ -149,7 +167,7 @@ def generateLootTable(name):
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 3,
+                "extra": 6,
                 "probability": 0.5714286
               }
             }
