@@ -29,7 +29,7 @@ public class HempCraft implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		new Strains();
+		HC_Strain.BuildAll()
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
