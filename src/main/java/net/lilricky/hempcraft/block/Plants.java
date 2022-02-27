@@ -17,7 +17,6 @@ public class Plants
     public static Block Plant;
     public static Item Seed;
     
-
     public Plants(String name)
     {
         // TODO: Find a way to generate the plant objects.
@@ -31,8 +30,9 @@ public class Plants
 
         HempCraft.LOGGER.info("Registed Plant: " + Plant.getTranslationKey());
 
-        new ModRenderHelper(Plant);
+        ModRenderHelper.Plants_To_Render.push(Plant);
 
+        // new ModRenderHelper(Plant);
     }
 
 }
