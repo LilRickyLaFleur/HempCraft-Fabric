@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/crop",
+    "textures":
+    {
+        "crop": "hempcraft:block/tobacco/plant_7"
+    }
+}

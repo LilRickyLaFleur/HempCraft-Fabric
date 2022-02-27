@@ -2,6 +2,6 @@
 	"parent": "minecraft:block/crop",
     "textures":
     {
-        "crop": "hempcraft:block/plant_7"
+        "crop": "hempcraft:block/tobacco/plant_0"
     }
 }

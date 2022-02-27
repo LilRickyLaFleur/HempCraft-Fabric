@@ -204,28 +204,28 @@ item_blunts = { "parent": "hempcraft:item/blunt" }
 blockstate_plant = {
 "variants": {
         "age=0": {
-            "model": "hempcraft:block/plant_0"
+            "model": "hempcraft:block/strain/plant_0"
         },
         "age=1": {
-            "model": "hempcraft:block/plant_1"
+            "model": "hempcraft:block/strain/plant_1"
         },
         "age=2": {
-            "model": "hempcraft:block/plant_2"
+            "model": "hempcraft:block/strain/plant_2"
         },
         "age=3": {
-            "model": "hempcraft:block/plant_3"
+            "model": "hempcraft:block/strain/plant_3"
         },
         "age=4": {
-            "model": "hempcraft:block/plant_4"
+            "model": "hempcraft:block/strain/plant_4"
         },
         "age=5": {
-            "model": "hempcraft:block/plant_5"
+            "model": "hempcraft:block/strain/plant_5"
         },
         "age=6": {
-            "model": "hempcraft:block/plant_6"
+            "model": "hempcraft:block/strain/plant_6"
         },
         "age=7": {
-            "model": "hempcraft:block/plant_7"
+            "model": "hempcraft:block/strain/plant_7"
         }
     }
 }

@@ -1,0 +1,83 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:block_state_property",
+                                    "block": "hempcraft:tobacco_plant",
+                                    "properties": {
+                                        "age": "7"
+                                    }
+                                }
+                            ],
+                            "name": "hempcraft:tobacco_leaf"
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "hempcraft:tobacco_seed"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:binomial_with_bonus_count",
+                            "parameters": {
+                                "extra": 3,
+                                "probability": 0.5714286
+                            }
+                        }
+                    ],
+                    "name": "hempcraft:seed/blue_widow"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:binomial_with_bonus_count",
+                            "parameters": {
+                                "extra": 3,
+                                "probability": 0.5714286
+                            }
+                        }
+                    ],
+                    "name": "hempcraft:tobacco_leaf"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "hempcraft:tobacco_plant",
+                    "properties": {
+                        "age": "7"
+                    }
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:explosion_decay"
+        }
+    ]
+}

@@ -1,15 +1,14 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
+        "PPP",
+        "P P",
         "PPP"
     ],
     "key": {
         "P": 
         [
-            { "item": "minecraft:grass" },
-            { "item": "minecraft:tall_grass" },
-            { "item": "minecraft:fern" },
-            { "item": "minecraft:large_fern" }
+            { "item": "hempcraft:hemp_leaf" }
         ]
     },
     "result": {

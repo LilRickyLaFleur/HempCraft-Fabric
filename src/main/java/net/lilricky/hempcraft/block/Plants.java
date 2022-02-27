@@ -19,6 +19,10 @@ public class Plants
 
     public static Block Plant;
     public static Item Seed;
+
+    // Create Tobacco Seeds and Plants
+    public static Block Tobacco_Plant = ModBlocks.registerBlockWithoutBlockItem("tobacco_plant", new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), "tobacco_plant"));
+    public static Item Tobacco_Seed = ModItems.registerItem("tobacco_seed", new AliasedBlockItem(Tobacco_Plant, HempCraft.default_item_settings));
     
 
     public Plants(String name)
@@ -35,6 +39,7 @@ public class Plants
         HempCraft.LOGGER.info("Registed Plant: " + Plant.getTranslationKey());
 
         new ModRenderHelper(Plant);
+        new ModRenderHelper(Tobacco_Plant);
 
     }
 
