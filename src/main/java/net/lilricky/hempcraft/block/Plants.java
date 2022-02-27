@@ -1,11 +1,8 @@
 package net.lilricky.hempcraft.block;
 
-import java.util.jar.Attributes.Name;
-
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.lilricky.hempcraft.HempCraft;
 import net.lilricky.hempcraft.block.custom.Plant;
-import net.lilricky.hempcraft.item.HC_Strain;
 import net.lilricky.hempcraft.item.ModItems;
 import net.lilricky.hempcraft.util.ModRenderHelper;
 import net.minecraft.block.Block;
