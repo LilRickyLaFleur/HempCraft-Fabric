@@ -33,7 +33,7 @@ dir_item_models = out_dir + "assets/hempcraft/models/item/"
 dir_blockstates = out_dir + "assets/hempcraft/blockstates/"
 dir_loottables = out_dir + "data/hempcraft/loot_tables/"
 dir_recipe = out_dir + "data/hempcraft/recipes/"
-dir_advancements = out_dir + "/data/hempcraft/advancements/"
+dir_advancements = out_dir + "data/hempcraft/advancements/"
 
 
 # Creates a Directory if non exists
@@ -55,15 +55,17 @@ def generateLootTable(name):
     return {
   "type": "minecraft:block",
   "pools": [
+
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "hempcraft:bud/" + name,
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
@@ -72,19 +74,55 @@ def generateLootTable(name):
                     "age": "7"
                   }
                 }
+              ]
+            }
+          ]
+        },
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "hempcraft:hemp_leaf",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 3
+                }
               ],
-              "name": "hempcraft:bud/" + name
-            },
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "hempcraft:plant/" + name,
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
             {
               "type": "minecraft:item",
               "name": "hempcraft:seed/" + name
-            },
-            {
-              "type": "minecraft:item",
-              "name": "hempcraft:hemp_leaf"
             }
           ]
-        }
+        },
       ]
     },
     {
@@ -114,12 +152,27 @@ def generateLootTable(name):
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 3,
+                "extra": 9,
                 "probability": 0.5714286
               }
             }
           ],
           "name": "hempcraft:hemp_leaf"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:binomial_with_bonus_count",
+              "parameters": {
+                "extra": 6,
+                "probability": 0.5714286
+              }
+            }
+          ],
+          "name": "hempcraft:bud/" + name
         }
       ],
       "conditions": [

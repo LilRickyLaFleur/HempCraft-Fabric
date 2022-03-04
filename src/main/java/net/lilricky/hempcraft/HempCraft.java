@@ -3,8 +3,8 @@ package net.lilricky.hempcraft;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.lilricky.hempcraft.Strains.Strains;
 import net.lilricky.hempcraft.block.ModBlocks;
+import net.lilricky.hempcraft.item.HC_Strain;
 import net.lilricky.hempcraft.item.ModItemGroup;
 import net.lilricky.hempcraft.item.ModItems;
 import net.minecraft.item.ItemGroup;
@@ -29,7 +29,7 @@ public class HempCraft implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		new Strains();
+		HC_Strain.BuildAll();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 

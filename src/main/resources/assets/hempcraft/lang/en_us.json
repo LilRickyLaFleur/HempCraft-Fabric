@@ -17,6 +17,20 @@
     "item.hempcraft.cone.yard_trimmings": "Yard Trimmings Cone",
     "item.hempcraft.blunt.yard_trimmings": "Yard Trimmings Blunt",
 
+    "item.hempcraft.bud.chem_fruit": "Chem Fruit Bud",
+    "block.hempcraft.plant.chem_fruit": "Chem Fruit Plant",
+    "item.hempcraft.seed.chem_fruit": "Chem Fruit Seeds",
+    "item.hempcraft.joint.chem_fruit": "Chem Fruit Joint",
+    "item.hempcraft.cone.chem_fruit": "Chem Fruit Cone",
+    "item.hempcraft.blunt.chem_fruit": "Chem Fruit Blunt",
+
+    "item.hempcraft.bud.trainwreck": "Trainwreck Bud",
+    "block.hempcraft.plant.trainwreck": "Trainwreck Plant",
+    "item.hempcraft.seed.trainwreck": "Trainwreck Seeds",
+    "item.hempcraft.joint.trainwreck": "Trainwreck Joint",
+    "item.hempcraft.cone.trainwreck": "Trainwreck Cone",
+    "item.hempcraft.blunt.trainwreck": "Trainwreck Blunt",
+
     "item.hempcraft.bud.miners_delight": "Miners Delight Bud",
     "block.hempcraft.plant.miners_delight": "Miners Delight Plants",
     "item.hempcraft.seed.miners_delight": "Miners Delight Seed",

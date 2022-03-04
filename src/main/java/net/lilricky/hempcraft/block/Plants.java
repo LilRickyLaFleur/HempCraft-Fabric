@@ -1,11 +1,8 @@
 package net.lilricky.hempcraft.block;
 
-import java.util.jar.Attributes.Name;
-
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.lilricky.hempcraft.HempCraft;
 import net.lilricky.hempcraft.block.custom.Plant;
-import net.lilricky.hempcraft.item.HC_Strain;
 import net.lilricky.hempcraft.item.ModItems;
 import net.lilricky.hempcraft.util.ModRenderHelper;
 import net.minecraft.block.Block;
@@ -24,7 +21,6 @@ public class Plants
     public static Block Tobacco_Plant = ModBlocks.registerBlockWithoutBlockItem("tobacco_plant", new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), "tobacco_plant"));
     public static Item Tobacco_Seed = ModItems.registerItem("tobacco_seed", new AliasedBlockItem(Tobacco_Plant, HempCraft.default_item_settings));
     
-
     public Plants(String name)
     {
         // TODO: Find a way to generate the plant objects.
@@ -38,9 +34,9 @@ public class Plants
 
         HempCraft.LOGGER.info("Registed Plant: " + Plant.getTranslationKey());
 
-        new ModRenderHelper(Plant);
-        new ModRenderHelper(Tobacco_Plant);
+        ModRenderHelper.Plants_To_Render.push(Plant);
 
+        // new ModRenderHelper(Plant);
     }
 
 }
