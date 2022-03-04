@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "hempcraft",
   "version": "${version}",
-
   "name": "HempCraft",
   "description": "Bring hemp to your minecraft world!",
   "authors": [
@@ -12,20 +11,22 @@
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/LilRickyLaFleur/HempCraft-Fabric"
   },
-
   "license": "MIT",
   "icon": "assets/modid/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
       "net.lilricky.hempcraft.HempCraft"
+    ],
+    "client": [
+      {
+        "value": "net.lilricky.hempcraft.util.ModRenderHelper"
+      }
     ]
   },
   "mixins": [
     "hempcraft.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.12.12",
     "fabric": "*",
