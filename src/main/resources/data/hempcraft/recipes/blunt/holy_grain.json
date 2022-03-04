@@ -1,1 +1,1 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:empty_blunt"}, "W": {"item": "hempcraft:bud/holy_grain"}}, "result": {"item": "hempcraft:blunt/holy_grain", "count": 1}}
+{"type": "minecraft:crafting_shaped", "pattern": ["BBB", " P "], "key": {"B": {"item": "hempcraft:bud/holy_grain"}, "P": {"item": "hempcraft:empty_blunt"}}, "result": {"item": "hempcraft:blunt/holy_grain", "count": 1}}

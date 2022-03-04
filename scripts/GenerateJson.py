@@ -195,32 +195,65 @@ def generateLootTable(name):
 
 def generateRecipe(name, type):
 
-    wrapper = type
     if type == "joint":
-        wrapper = "joint_paper"
+        json = {
+            "type": "minecraft:crafting_shaped",
+            "pattern":
+            [
+                "B",
+                "P"
+            ],
+            "key":
+            {
+                "B": {"item": "hempcraft:bud/" + name},
+                "P": {"item": "hempcraft:joint_paper"}
+            },
+            "result":
+            {
+                "item": "hempcraft:" + type + "/" + name,
+                "count": 4
+            }
+        }
     elif type == "cone":
-        wrapper = "empty_cone"
+        json = {
+            "type": "minecraft:crafting_shaped",
+            "pattern":
+            [
+                "BB",
+                " P"
+            ],
+            "key":
+            {
+                "B": {"item": "hempcraft:bud/" + name},
+                "P": {"item": "hempcraft:empty_cone"}
+            },
+            "result":
+            {
+                "item": "hempcraft:" + type + "/" + name,
+                "count": 1
+            }
+        }
     elif type == "blunt":
-        wrapper = "empty_blunt"
+        json = {
+            "type": "minecraft:crafting_shaped",
+            "pattern":
+            [
+                "BBB",
+                " P "
+            ],
+            "key":
+            {
+                "B": {"item": "hempcraft:bud/" + name},
+                "P": {"item": "hempcraft:empty_blunt"}
 
-    return {
-    "type": "minecraft:crafting_shaped",
-    "pattern": 
-    [
-        "W",
-        "P"
-    ],
-    "key":
-    {
-        "P": { "item": "hempcraft:" + wrapper },
-        "W": { "item": "hempcraft:bud/" + name }
-    },
-    "result":
-    {
-        "item": "hempcraft:" + type + "/" + name,
-        "count": 1
-    }
-}
+            },
+            "result":
+            {
+                "item": "hempcraft:" + type + "/" + name,
+                "count": 1
+            }
+        }
+    return json
 
 def generateAdvancements(name, type):
   return {

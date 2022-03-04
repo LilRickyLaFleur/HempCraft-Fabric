@@ -23,20 +23,20 @@ public class Plants
     
     public Plants(String name)
     {
-        // TODO: Find a way to generate the plant objects.
-        //! HC_STRAIN Will call this shit
-        // ? Its similar to src\main\java\net\lilricky\hempcraft\item\HC_Strain.java
-
         HempCraft.LOGGER.info("Plants.java: Creating plant and seed: " + name);
 
+        // Creates and registers the strains Plant block.
         Plant = ModBlocks.registerBlockWithoutBlockItem("plant/" + name, new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), name));
+
+        // Creates and registers the seed item for the plant for the strain. Links them together.
         Seed = ModItems.registerItem("seed/" + name, new AliasedBlockItem(Plant, HempCraft.default_item_settings));
 
         HempCraft.LOGGER.info("Registed Plant: " + Plant.getTranslationKey());
 
+        // Sends plants to the render helper.
         ModRenderHelper.Plants_To_Render.push(Plant);
+        ModRenderHelper.Plants_To_Render.push(Tobacco_Plant);
 
-        // new ModRenderHelper(Plant);
     }
 
 }

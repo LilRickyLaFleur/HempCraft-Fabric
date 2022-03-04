@@ -1,1 +1,1 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:joint_paper"}, "W": {"item": "hempcraft:bud/trainwreck"}}, "result": {"item": "hempcraft:joint/trainwreck", "count": 1}}
+{"type": "minecraft:crafting_shaped", "pattern": ["B", "P"], "key": {"B": {"item": "hempcraft:bud/trainwreck"}, "P": {"item": "hempcraft:joint_paper"}}, "result": {"item": "hempcraft:joint/trainwreck", "count": 4}}

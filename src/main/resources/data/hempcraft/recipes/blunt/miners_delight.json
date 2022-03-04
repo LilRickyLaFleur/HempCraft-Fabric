@@ -1,1 +1,1 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:empty_blunt"}, "W": {"item": "hempcraft:bud/miners_delight"}}, "result": {"item": "hempcraft:blunt/miners_delight", "count": 1}}
+{"type": "minecraft:crafting_shaped", "pattern": ["BBB", " P "], "key": {"B": {"item": "hempcraft:bud/miners_delight"}, "P": {"item": "hempcraft:empty_blunt"}}, "result": {"item": "hempcraft:blunt/miners_delight", "count": 1}}

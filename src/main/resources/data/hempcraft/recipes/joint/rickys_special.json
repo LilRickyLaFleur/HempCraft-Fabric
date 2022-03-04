@@ -1,1 +1,1 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:joint_paper"}, "W": {"item": "hempcraft:bud/rickys_special"}}, "result": {"item": "hempcraft:joint/rickys_special", "count": 1}}
+{"type": "minecraft:crafting_shaped", "pattern": ["B", "P"], "key": {"B": {"item": "hempcraft:bud/rickys_special"}, "P": {"item": "hempcraft:joint_paper"}}, "result": {"item": "hempcraft:joint/rickys_special", "count": 4}}

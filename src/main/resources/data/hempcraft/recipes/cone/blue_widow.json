@@ -1,1 +1,1 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:empty_cone"}, "W": {"item": "hempcraft:bud/blue_widow"}}, "result": {"item": "hempcraft:cone/blue_widow", "count": 1}}
+{"type": "minecraft:crafting_shaped", "pattern": ["BB", " P"], "key": {"B": {"item": "hempcraft:bud/blue_widow"}, "P": {"item": "hempcraft:empty_cone"}}, "result": {"item": "hempcraft:cone/blue_widow", "count": 1}}
