@@ -1,1 +1,1 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["W", "P"], "key": {"P": {"item": "hempcraft:empty_blunt"}, "W": {"item": "hempcraft:bud/dolphin_daydream"}}, "result": {"item": "hempcraft:blunt/dolphin_daydream", "count": 1}}
+{"type": "minecraft:crafting_shaped", "pattern": ["BBB", " P "], "key": {"B": {"item": "hempcraft:bud/dolphin_daydream"}, "P": {"item": "hempcraft:empty_blunt"}}, "result": {"item": "hempcraft:blunt/dolphin_daydream", "count": 1}}

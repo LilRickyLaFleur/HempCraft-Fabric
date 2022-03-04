@@ -22,5 +22,7 @@ public class ModItems {
         ModItems.registerItem("empty_cone", new Item(HempCraft.default_item_settings));
         ModItems.registerItem("empty_blunt", new Item(HempCraft.default_item_settings));
         Hemp_Leaf = ModItems.registerItem("hemp_leaf", new Item(HempCraft.default_item_settings));
+
+        ModItems.registerItem("tobacco_leaf", new Item(HempCraft.default_item_settings));
     }
 }
