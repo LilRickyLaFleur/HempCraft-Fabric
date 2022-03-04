@@ -11,6 +11,12 @@
                         {
                             "type": "minecraft:item",
                             "name": "hempcraft:tobacco_leaf",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": 2
+                                }
+                            ],
                             "conditions": [
                                 {
                                     "condition": "minecraft:block_state_property",

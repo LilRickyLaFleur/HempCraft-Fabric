@@ -93,7 +93,7 @@ def generateLootTable(name):
               "functions": [
                 {
                   "function": "minecraft:set_count",
-                  "count": 3
+                  "count": 2
                 }
               ],
               "conditions": [
@@ -137,7 +137,7 @@ def generateLootTable(name):
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 3,
+                "extra": 2,
                 "probability": 0.5714286
               }
             }
@@ -152,7 +152,7 @@ def generateLootTable(name):
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 9,
+                "extra": 1,
                 "probability": 0.5714286
               }
             }
@@ -167,7 +167,7 @@ def generateLootTable(name):
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 6,
+                "extra": 2,
                 "probability": 0.5714286
               }
             }
