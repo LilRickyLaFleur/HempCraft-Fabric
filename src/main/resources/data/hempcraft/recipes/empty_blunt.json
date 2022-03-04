@@ -1,14 +1,19 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "PPP",
-        "P P",
-        "PPP"
+        "HHH",
+        "TTT"
     ],
     "key": {
-        "P": 
-        [
-            { "item": "hempcraft:hemp_leaf" }
+        "H": [
+            {
+                "item": "hempcraft:hemp_leaf"
+            }
+        ],
+        "T": [
+            {
+                "item": "hempcraft:tobacco_leaf"
+            }
         ]
     },
     "result": {

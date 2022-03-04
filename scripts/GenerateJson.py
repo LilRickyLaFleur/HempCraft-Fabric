@@ -7,7 +7,6 @@
 import json
 import os
 
-
 #! LIST OF STRAINS
 # Master list of strains, change this to change names/values of generated files
 strains = [
@@ -24,7 +23,7 @@ strains = [
     "scout_master",
     "rickys_special"
 ]
- 
+
 
 # Change out_dir to where you want the files to go. Include the last slash.
 # out_dir = "out/"
@@ -43,6 +42,8 @@ def createDir(path):
         print("Created Directory: " + path)
 
 # Writes JSON to a file of specific directory.
+
+
 def writeJSON(dir, type, name, data):
     createDir(dir + type)
     with open(dir + type + "/" + name + ".json", 'w') as f:
@@ -51,147 +52,150 @@ def writeJSON(dir, type, name, data):
     f.close
 
 # Generates the loot table based off of JSON
+
+
 def generateLootTable(name):
     return {
-  "type": "minecraft:block",
-  "pools": [
+        "type": "minecraft:block",
+        "pools": [
 
-    {
-      "rolls": 1,
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
             {
-              "type": "minecraft:item",
-              "name": "hempcraft:bud/" + name,
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "hempcraft:plant/" + name,
-                  "properties": {
-                    "age": "7"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                    {
+                        "type": "minecraft:alternatives",
+                        "children": [
+                            {
+                                "type": "minecraft:item",
+                                "name": "hempcraft:bud/" + name,
+                                "conditions": [
+                                    {
+                                        "condition": "minecraft:block_state_property",
+                                        "block": "hempcraft:plant/" + name,
+                                        "properties": {
+                                            "age": "7"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
             {
-              "type": "minecraft:item",
-              "name": "hempcraft:hemp_leaf",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": 3
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "hempcraft:plant/" + name,
-                  "properties": {
-                    "age": "7"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                    {
+                        "type": "minecraft:alternatives",
+                        "children": [
+                            {
+                                "type": "minecraft:item",
+                                "name": "hempcraft:hemp_leaf",
+                                "functions": [
+                                    {
+                                        "function": "minecraft:set_count",
+                                        "count": 2
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "condition": "minecraft:block_state_property",
+                                        "block": "hempcraft:plant/" + name,
+                                        "properties": {
+                                            "age": "7"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
             {
-              "type": "minecraft:item",
-              "name": "hempcraft:seed/" + name
-            }
-          ]
-        },
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                    {
+                        "type": "minecraft:alternatives",
+                        "children": [
+                            {
+                                "type": "minecraft:item",
+                                "name": "hempcraft:seed/" + name
+                            }
+                        ]
+                    },
+                ]
+            },
             {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "parameters": {
-                "extra": 3,
-                "probability": 0.5714286
-              }
+                "rolls": 1.0,
+                "bonus_rolls": 0.0,
+                "entries": [
+                    {
+                        "type": "minecraft:item",
+                        "functions": [
+                            {
+                                "function": "minecraft:apply_bonus",
+                                "enchantment": "minecraft:fortune",
+                                "formula": "minecraft:binomial_with_bonus_count",
+                                "parameters": {
+                                    "extra": 2,
+                                    "probability": 0.5714286
+                                }
+                            }
+                        ],
+                        "name": "hempcraft:seed/" + name
+                    },
+                    {
+                        "type": "minecraft:item",
+                        "functions": [
+                            {
+                                "function": "minecraft:apply_bonus",
+                                "enchantment": "minecraft:fortune",
+                                "formula": "minecraft:binomial_with_bonus_count",
+                                "parameters": {
+                                    "extra": 1,
+                                    "probability": 0.5714286
+                                }
+                            }
+                        ],
+                        "name": "hempcraft:hemp_leaf"
+                    },
+                    {
+                        "type": "minecraft:item",
+                        "functions": [
+                            {
+                                "function": "minecraft:apply_bonus",
+                                "enchantment": "minecraft:fortune",
+                                "formula": "minecraft:binomial_with_bonus_count",
+                                "parameters": {
+                                    "extra": 2,
+                                    "probability": 0.5714286
+                                }
+                            }
+                        ],
+                        "name": "hempcraft:bud/" + name
+                    }
+                ],
+                "conditions": [
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "hempcraft:plant/" + name,
+                        "properties": {
+                            "age": "7"
+                        }
+                    }
+                ]
             }
-          ],
-          "name": "hempcraft:seed/" + name
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
+        ],
+        "functions": [
             {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "parameters": {
-                "extra": 9,
-                "probability": 0.5714286
-              }
+                "function": "minecraft:explosion_decay"
             }
-          ],
-          "name": "hempcraft:hemp_leaf"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "parameters": {
-                "extra": 6,
-                "probability": 0.5714286
-              }
-            }
-          ],
-          "name": "hempcraft:bud/" + name
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:block_state_property",
-          "block": "hempcraft:plant/" + name,
-          "properties": {
-            "age": "7"
-          }
-        }
-      ]
+        ]
     }
-  ],
-  "functions": [
-    {
-      "function": "minecraft:explosion_decay"
-    }
-  ]
-}
+
 
 def generateRecipe(name, type):
 
@@ -222,40 +226,41 @@ def generateRecipe(name, type):
     }
 }
 
+
 def generateAdvancements(name, type):
-  return {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "hempcraft:bud/" + name
+    return {
+        "criteria": {
+            "requirement": {
+                "trigger": "minecraft:inventory_changed",
+                "conditions": {
+                    "items": [
+                        {
+                            "items": [
+                                "hempcraft:bud/" + name
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "rewards": {
+            "recipes": [
+                "hempcraft:" + type + "/" + name
             ]
-          }
-        ]
-      }
+        }
     }
-  },
-  "rewards": {
-    "recipes": [
-      "hempcraft:" + type + "/" + name
-    ]
-  }
-}
 
 
 # Model Objects for items
-item_seeds = { "parent" : "hempcraft:item/seed" }
-item_buds = { "parent": "hempcraft:item/bud" }
-item_joints = { "parent": "hempcraft:item/joint" }
-item_cones = { "parent": "hempcraft:item/cone" }
-item_blunts = { "parent": "hempcraft:item/blunt" }
+item_seeds = {"parent": "hempcraft:item/seed"}
+item_buds = {"parent": "hempcraft:item/bud"}
+item_joints = {"parent": "hempcraft:item/joint"}
+item_cones = {"parent": "hempcraft:item/cone"}
+item_blunts = {"parent": "hempcraft:item/blunt"}
 
 # BlockStates for Plant (JSON)
 blockstate_plant = {
-"variants": {
+    "variants": {
         "age=0": {
             "model": "hempcraft:block/plant_0"
         },
@@ -303,4 +308,3 @@ for x in strains:
     writeJSON(dir_advancements, "joint", x, generateAdvancements(x, "joint"))
     writeJSON(dir_advancements, "cone", x, generateAdvancements(x, "cone"))
     writeJSON(dir_advancements, "blunt", x, generateAdvancements(x, "blunt"))
-

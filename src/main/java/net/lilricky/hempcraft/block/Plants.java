@@ -11,28 +11,35 @@ import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 
 // Generate the plants
-public class Plants 
-{
+public class Plants {
 
-    public static Block Plant;
-    public static Item Seed;
-    
-    public Plants(String name)
-    {
-        // TODO: Find a way to generate the plant objects.
-        //! HC_STRAIN Will call this shit
-        // ? Its similar to src\main\java\net\lilricky\hempcraft\item\HC_Strain.java
+        public static Block Plant;
+        public static Item Seed;
 
-        HempCraft.LOGGER.info("Plants.java: Creating plant and seed: " + name);
+        // Create Tobacco Seeds and Plants
+        public static Block Tobacco_Plant = ModBlocks.registerBlockWithoutBlockItem("tobacco_plant",
+                        new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), "tobacco_plant"));
+        public static Item Tobacco_Seed = ModItems.registerItem("tobacco_seed",
+                        new AliasedBlockItem(Tobacco_Plant, HempCraft.default_item_settings));
 
-        Plant = ModBlocks.registerBlockWithoutBlockItem("plant/" + name, new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), name));
-        Seed = ModItems.registerItem("seed/" + name, new AliasedBlockItem(Plant, HempCraft.default_item_settings));
+        public Plants(String name) {
+                HempCraft.LOGGER.info("Plants.java: Creating plant and seed: " + name);
 
-        HempCraft.LOGGER.info("Registed Plant: " + Plant.getTranslationKey());
+                // Creates and registers the strains Plant block.
+                Plant = ModBlocks.registerBlockWithoutBlockItem("plant/" + name,
+                                new Plant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision(), name));
 
-        ModRenderHelper.Plants_To_Render.push(Plant);
+                // Creates and registers the seed item for the plant for the strain. Links them
+                // together.
+                Seed = ModItems.registerItem("seed/" + name,
+                                new AliasedBlockItem(Plant, HempCraft.default_item_settings));
 
-        // new ModRenderHelper(Plant);
-    }
+                HempCraft.LOGGER.info("Registed Plant: " + Plant.getTranslationKey());
+
+                // Sends plants to the render helper.
+                ModRenderHelper.Plants_To_Render.push(Plant);
+                ModRenderHelper.Plants_To_Render.push(Tobacco_Plant);
+
+        }
 
 }
