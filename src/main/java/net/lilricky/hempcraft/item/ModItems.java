@@ -7,20 +7,17 @@ package net.lilricky.hempcraft.item;
 import net.lilricky.hempcraft.HempCraft;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 
-public class ModItems 
-{
+public class ModItems {
     static Item Hemp_Leaf;
 
-
-    public static Item registerItem(String name, Item item)
-    {
-        return Registry.register(Registry.ITEM, new Identifier(HempCraft.MOD_ID, name), item);
+    public static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(HempCraft.MOD_ID, name), item);
     }
 
-    public static void registerModItems()
-    {
+    public static void registerModItems() {
         // Empty Shells
         ModItems.registerItem("joint_paper", new Item(HempCraft.default_item_settings));
         ModItems.registerItem("empty_cone", new Item(HempCraft.default_item_settings));
