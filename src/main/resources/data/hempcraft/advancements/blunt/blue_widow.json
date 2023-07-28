@@ -1,1 +1,21 @@
-{"criteria": {"requirement": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": ["hempcraft:bud/blue_widow"]}]}}}, "rewards": {"recipes": ["hempcraft:blunt/blue_widow"]}}
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "hempcraft:bud/blue_widow"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "hempcraft:blunt/blue_widow"
+        ]
+    }
+}

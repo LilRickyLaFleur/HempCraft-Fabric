@@ -15,7 +15,8 @@ public class HempCraft implements ModInitializer {
 	// MOD ID for the mod
 	public static final String MOD_ID = "hempcraft";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static FabricItemSettings default_item_settings = new FabricItemSettings().group(ModItemGroup.HempCraft_Item_Group);
+	public static FabricItemSettings default_item_settings = new FabricItemSettings()
+			.group(ModItemGroup.HempCraft_Item_Group);
 
 	// Start Point
 	@Override
@@ -34,21 +35,17 @@ public class HempCraft implements ModInitializer {
 	// General Tools
 
 	// Finds the largest integer in a array
-	public static int findLargestInt(int[] Array)
-	{
+	public static int findLargestInt(int[] Array) {
 		int maxNum = Array[0];
 
-		for (int j : Array)
-		{
-			if(j > maxNum)
-			{
+		for (int j : Array) {
+			if (j > maxNum) {
 				maxNum = j;
 			}
 		}
 
 		return maxNum;
-		
-	}
 
+	}
 
 }
