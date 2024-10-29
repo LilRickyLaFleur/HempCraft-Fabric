@@ -3,6 +3,7 @@ package net.lilricky.hempcraft.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.lilricky.hempcraft.HempCraft;
+import net.lilricky.hempcraft.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -37,8 +38,11 @@ public class ModBlocks
         // TODO: PLANTS | Create plant groupings
         //! Use the code from ModeItems.java. DO IT.
 
-
-        
         HempCraft.LOGGER.info("Registering ModBlocks for " + HempCraft.MOD_ID);
+
+        Block rolling_table = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+
+        ModBlocks.registerBlock("Rolling Table", rolling_table, ModItemGroup.HempCraft_Item_Group);
+
     }
 }
