@@ -40,9 +40,11 @@ public class ModBlocks
 
         HempCraft.LOGGER.info("Registering ModBlocks for " + HempCraft.MOD_ID);
 
+        
+        // Register Rolling Table
         Block rolling_table = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
-
-        ModBlocks.registerBlock("Rolling Table", rolling_table, ModItemGroup.HempCraft_Item_Group);
+        ModBlocks.registerBlock("rolling_table", rolling_table, ModItemGroup.HempCraft_Item_Group);
 
     }
 }
+
